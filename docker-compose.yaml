@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api:
+    image: reviewapi
+    build:
+      context: src
+      dockerfile: ReviewGenerator.Api/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=development
+    ports:
+      - 8139:80
+  web:
+    image: reviewweb
+    build:
+      context: web/review-generator
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+    - 3113:3000
