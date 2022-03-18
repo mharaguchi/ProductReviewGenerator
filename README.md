@@ -6,7 +6,7 @@ Requires .NET 6, npm, Docker, React.
 
 ## Setup
 - Use included test data
-- OR
+<br>OR
 - Download a 5-core Amazon review file (tested with Musical Instruments, Toys and Games, and Electronics) from http://jmcauley.ucsd.edu/data/amazon/ and extract GZ file.
 - Add Amazon review JSON file to the \src\ReviewGenerator.Api\data folder.
 - Modify \src\ReviewGenerator.Api\appsettings.json > FileSystemReviewRepositoryOptions > FilePath to reflect the correct JSON file. Make sure it has the relative path "data/" at the start.

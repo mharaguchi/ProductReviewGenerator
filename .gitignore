@@ -350,5 +350,6 @@ MigrationBackup/
 .ionide/
 
 # Test data folder
-src/ReviewGenerator.Api/data/
-!src/ReviewGenerator.Api/data/Test_Data_5.json
+src/ReviewGenerator.Api/data/Electronics_5.json
+src/ReviewGenerator.Api/data/Musical_Instruments_5.json
+src/ReviewGenerator.Api/data/Toys_and_Games_5.json
